@@ -79,17 +79,16 @@ if (isset($_POST['submit'])){
     </tbody>
 </table>
 
-<!-- data inserted in user"s tale -->
+
 <?php
         $name  =  $_SESSION["name"];
-$finalresult =  "insert into user (uid,username,totalques,answercorrect) value ('', '$name','6','$result')";
+$finalresult =  "insert into user (uid,username,totalques,answercorrect) value ('', '$name','3','$result')";
 $obj->dataquery($finalresult);
 
     }
 }
 ?>
 
-<a href="logout.php" type="submit" class="btn btn-primary m-auto d-block">logout</a>
 <div class="m-auto d-block text-center ">
 <small class=" t fs-5">Project by asharif khan</small>
 </div>
