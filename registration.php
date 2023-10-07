@@ -8,10 +8,10 @@ if(isset($_POST["submit"])){
 extract($_POST);
 $sql="INSERT INTO registration  VALUE ('','$name','$email','$pass')";
 if($obj->dataquery($sql)=== TRUE){
-    echo " Successfully registered ";
-}
-
-}
+  ?>
+<script>alert("Registration Succesfully!")</script>
+  <?php
+}}
 ?>
 
 
@@ -75,7 +75,7 @@ if($obj->dataquery($sql)=== TRUE){
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                   <button type="submit" class="btn btn-primary" name="submit">Register</button>
 
-                    <a href="login.php" type="button" class="btn btn-primary btn-lg ms-4">login</a>
+                    <a href="index.php" type="button" class="btn btn-primary btn-lg ms-4">login</a>
                   </div>
 
                 </form>

@@ -90,6 +90,9 @@ $obj->dataquery($finalresult);
 ?>
 
 <div class="m-auto d-block text-center ">
+    <div>
+        <a class="btn btn-primary" href="logout.php">Logout</a>
+    </div>
 <small class=" t fs-5">Project by asharif khan</small>
 </div>
 </div>

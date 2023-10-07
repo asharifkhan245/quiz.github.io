@@ -8,6 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
 </head>
+
+<style>
+    .cursor-pointer{
+        cursor: pointer;
+    }
+</style>
 <body>
 
     <!-- header section -->
@@ -54,7 +60,7 @@ $query = $obj->dataquery($q);
 while($rows = mysqli_fetch_assoc($query)){
     ?>
 <div class="card-body">
-<input type="radio" name="quizcheck[<?php echo $rows["ans_id"]?>]" value="<?php echo $rows["aid"];?>"> 
+<input type="radio" class="cursor-pointer"  name="quizcheck[<?php echo $rows["ans_id"]?>]" value="<?php echo $rows["aid"];?>"> 
 <?php echo $rows["answer"] ?>
 </div>
 
@@ -70,7 +76,7 @@ while($rows = mysqli_fetch_assoc($query)){
 
     </div>
     <div class="m-auto d-block text-center ">
-<small class=" t fs-5">Project by asharif khan</small>
+<small class=" fs-5">Project by muhammad asharif</small>
 </div>
 </body>
 </html>
